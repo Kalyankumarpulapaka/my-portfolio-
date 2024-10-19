@@ -42,60 +42,72 @@
           <a aria-label="My Github Profile" target="_blank" href="https://github.com/Kalyankumarpulapaka?tab=repositories">
             <i class="icon fa fa-github-alt" aria-hidden="true"></i>
           </a>
-          <a class="resume-link" target="_blank" href="https://drive.google.com/file/d/1SLECujI0isMvAPj1NTWyundzKqQr7FvL/view?usp=drive_link">
+          <a class="resume-link" target="_blank" href="https://drive.google.com/file/d/1gieQMyStsA0iY8_5RYViLbuSaFZQlJR1/view?usp=drive_link">
             <i class="icon fa fa-file-pdf-o" aria-hidden="true"></i>
             <span></span>
           </a>
-          
-          <a aria-label="Send Email" href="mailto:pulapakakalyankumar@gmail.com" target="_blank"
-            ><i class="icon fa fa-envelope"></i
-          ></a>
+          <a aria-label="Send Email" href="mailto:pulapakakalyankumar@gmail.com" target="_blank">
+            <i class="icon fa fa-envelope"></i>
+          </a>
         </div>
         <div class="header-links">
-          <a class="link" href="#about" data-scroll>About Me</a>
+          <!-- Updated href to match the section ID -->
+          <a class="link" href="#about-section" data-scroll>About Me</a>
           <a class="link" href="#projects" data-scroll>Projects</a>
         </div>
       </div>
-      <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
+      <!-- Updated href to match the section ID -->
+      <a class="down" href="#about-section" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
     </div>
-<!-- About Section -->
-<section id="about-section">
-  <!-- User Introduction -->
-  <div class="intro-wrapper">
-    <h1 class="title">My Story</h1>
-    <div class="profile-wrapper">
-      <div class="profile-image">
-        <picture>
-          <source
-            type="image/webp"
-            srcset="./assets/img/webp/mine.webp"
-            alt="Professional Me"
-          />
-          <img
-            src="./assets/img/jpg/mine.jpg"
-            alt="Professional Me"
-          />
-        </picture>
+  
+    <!-- About Section -->
+    <section id="about-section">
+      <div class="intro-wrapper">
+        <h1 class="title">My Story</h1>
+        <div class="profile-wrapper">
+          <div class="profile-image">
+            <picture>
+              <source type="image/webp" srcset="./assets/img/webp/mine.webp" alt="Professional Me" />
+              <img src="./assets/img/jpg/mine.jpg" alt="Professional Me" />
+            </picture>
+          </div>
+        </div>
+        <br />
+        <div class="bio-content">
+          <p>
+            I am a versatile Web Developer with 2 years of experience in frontend development, specializing in creating dynamic and responsive web applications using HTML, CSS, JavaScript, and frameworks such as React. I have demonstrated expertise in integrating APIs, optimizing user interfaces, and ensuring cross-browser compatibility, as well as collaborating within Agile teams to deliver high-quality solutions.
+          </p>
+          <p>
+            My professional experience includes working as a Junior Web Developer at Teleperformance for a year, where I contributed to developing and maintaining responsive web applications using React, HTML, and CSS. Prior to that, I worked as a Web Developer Associate at Accenture for a year, building cloud-based web interfaces, resolving performance issues, and integrating RESTful APIs to improve data flow and enhance performance.
+          </p>
+          <p>
+            I hold certifications in Full Stack Development and React & JavaScript from Guvi. These programs, combined with hands-on projects like building a Project Management Tool, AI Interview System, and an Embroidery Design Ordering System, have equipped me with strong full-stack development skills, particularly in the MERN stack.
+          </p>
+          <p>
+            In addition to my technical skills, I am dedicated to enhancing user experiences, staying updated with modern web technologies, and continuously learning to improve my cloud storage and distributed systems expertise. My goal is to leverage my expertise in cutting-edge web technologies to build innovative, scalable solutions in the tech industry.
+          </p>
+        </div>
       </div>
-    </div>
-    <br>
-    <div class="bio-content">
-      <p>
-        I am a Full Stack Developer with hands-on experience in web development, specializing in the MERN stack (MongoDB, Express.js, React.js, Node.js). With a strong foundation in both frontend and backend development, I have successfully built scalable, dynamic web applications.
-      </p>
-      <p>
-        My experience includes working as a Junior Web Developer and Web Developer Intern at Teleperformance, where I contributed to internal web tools and dashboards, focusing on performance optimization and responsive design. I have also developed a range of real-time projects, including a Project Management Tool and an Advanced CRUD Application.
-      </p>
-      <p>
-        I hold certifications in Full Stack Development and React & JavaScript from Guvi. These qualifications reflect my commitment to mastering modern technologies and best practices in software development.
-      </p>
-      <p>
-        I am passionate about delivering high-quality software solutions and continuously enhancing my skills in cloud storage, distributed systems, and technical documentation. My goal is to leverage my expertise to build innovative and efficient solutions in the tech industry.
-      </p>
-    </div>
-  </div>
-</section>
+    </section>
+  
+    <!-- JavaScript to enable smooth scrolling -->
+    <script>
+      document.querySelectorAll('a[data-scroll]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const targetID = this.getAttribute('href').substring(1);
+          const targetElement = document.getElementById(targetID);
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+    </script>
 
+  
 
 
  <!-- Technology Stack Section -->
@@ -162,6 +174,94 @@
       
 
       <section class="user-projects-section">
+             <!-- Project 4 -->
+       <div class="user-projects">
+        <div class="carousel-container">
+          <div id="carouselTasteBuds" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://raw.githubusercontent.com/Kalyankumarpulapaka/my-portfolio-/refs/heads/main/IMG/Screenshot%202024-10-19%20193825.jpg" class="d-block w-100" alt="Project Image 1">
+              </div>
+              <div class="carousel-item">
+                <img src="https://raw.githubusercontent.com/Kalyankumarpulapaka/my-portfolio-/refs/heads/main/IMG/Screenshot%202024-10-19%20195012.jpg" class="d-block w-100" alt="Project Image 2">
+              </div>
+              <div class="carousel-item">
+                <img src="https://raw.githubusercontent.com/Kalyankumarpulapaka/my-portfolio-/refs/heads/main/IMG/Screenshot%202024-10-19%20195102.jpg" class="d-block w-100" alt="Project Image 3">
+              </div>
+              <div class="carousel-item">
+                <img src="https://raw.githubusercontent.com/Kalyankumarpulapaka/my-portfolio-/refs/heads/main/IMG/Screenshot%202024-10-19%20195102.jpg" class="d-block w-100" alt="Project Image 4">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselTasteBuds" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselTasteBuds" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="contents">
+          <h3>TasteBuds - Food Delivery App</h3>
+          <div class="project-icons">
+            <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/react.svg" />
+            <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/css3.svg" />
+            <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/github.svg" />
+          </div>
+          <p>
+            TasteBuds is a food delivery app developed using React, Node.js, Express, and MongoDB. It integrates a seamless payment gateway and allows users to browse menus, place orders, and track deliveries in real-time. The app is fully responsive and optimized for performance, with detailed documentation available in the GitHub repository.
+          </p>
+          <a class="project-link" target="_blank" href="https://tubular-kashata-bf4ca8.netlify.app/">Check it out!</a>
+         
+
+        </div>
+      </div>
+      
+
+      <!--project-5!-->
+      <div class="user-projects">
+        <div class="carousel-container">
+          <div id="carouselProjectAI" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://raw.githubusercontent.com/Kalyankumarpulapaka/my-portfolio-/refs/heads/main/IMG/Screenshot%202024-10-19%20195344.jpg" class="d-block w-100" alt="AI Interview System Image 1">
+              </div>
+              <div class="carousel-item">
+                <img src="https://raw.githubusercontent.com/Kalyankumarpulapaka/my-portfolio-/refs/heads/main/IMG/Screenshot%202024-10-19%20195759.jpg" class="d-block w-100" alt="AI Interview System Image 3">
+              </div>
+              <div class="carousel-item">
+                <img src="https://raw.githubusercontent.com/Kalyankumarpulapaka/my-portfolio-/refs/heads/main/IMG/Screenshot%202024-10-19%20195540.jpg" class="d-block w-100" alt="AI Interview System Image 2">
+              </div>
+             
+                
+              
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjectAI" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselProjectAI" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="contents">
+          <h3>AI Interview System</h3>
+          <div class="project-icons">
+            <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/react.svg" />
+            <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/node-dot-js.svg" />
+            <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/mongodb.svg" />
+            <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/github.svg" />
+          </div>
+          <p>
+            Created an AI-driven interview system that quizzes users based on their skills, role, and experience. It provides a detailed scorecard with explanations, improvement suggestions, and personalized feedback.
+          </p>
+          <a class="project-link" target="_blank" href="https://skillopedia.netlify.app/">Check it out!</a>
+        </div>
+      </div>
+
         <!-- Project 1 -->
         <div class="user-projects">
           <div class="carousel-container">
@@ -295,40 +395,13 @@
   
       
       
-       <!-- Project 4 -->
-       <div class="user-projects">
-        <div class="carousel-container">
-          <div id="carouselProject3" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./assets/img/jpg/today.jpg" class="d-block w-100" alt="Project Image 1">
-              </div>
-             
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject3" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselProject3" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </div>
-        <div class="contents">
-          <h3> Library Management System Admin Dashboard
-          </h3>
-          <div class="project-icons">
-            <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/react.svg" />
-            <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/css3.svg" />
-            <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/github.svg" />
-          </div>
-          <p>
-            I created an admin dashboard for managing library records using React and Formik. Users can add, edit, and delete books and authors, with Formik handling form validations. The application features a clean, responsive design and includes detailed documentation and a Git repository with a clear commit history.
-          </p>
-          <a class="project-link" target="_blank" href="https://github.com/Kalyankumarpulapaka/-library-management-system">Check it out!</a>
-        </div>
-      </div>
+  
+      
+
+
+
+
+
 
 
     <!--ex -->
@@ -350,14 +423,15 @@
           </div>
           <div class="experience-content">
             <ul>
-              <li>Developed and maintained internal web applications using HTML, CSS, JavaScript, ensuring responsive design and user interfaces.</li>
-              <li>Collaborated with back-end developers to integrate APIs and optimize performance for in-house projects.</li>
-              <li>Implemented user-friendly UI/UX designs to enhance the efficiency of internal management tools.</li>
-              <li>Worked closely with stakeholders to gather requirements, provided project timelines, and ensured on-time delivery of features.</li>
-              <li>Utilized version control systems like Git for code management and collaborated in an Agile environment with regular stand-up meetings.</li>
-              <li>Optimized existing websites and applications for better performance and cross-browser compatibility.</li>
-              <li>Managed the debugging and troubleshooting of web applications, addressing layout inconsistencies and improving overall user experience.</li>
+              <li>Developed and maintained responsive web applications using React, HTML, and CSS, ensuring smooth user experiences across devices.</li>
+              <li>Worked closely with back-end developers to integrate APIs and optimize application performance.</li>
+              <li>Created reusable React components, improving development efficiency and maintaining consistent UI/UX across the platform.</li>
+              <li>Identified and resolved performance bottlenecks and cross-browser issues, enhancing overall site reliability.</li>
+              <li>Used Git for version control and participated in Agile sprints to meet project deadlines and deliver new features.</li>
+              <li>Collaborated with designers to ensure pixel-perfect implementation of visual elements and consistency in branding.</li>
+              <li>Conducted code reviews and provided feedback to junior developers, maintaining high coding standards across the team.</li>
             </ul>
+            
           </div>
         </div>
   
@@ -368,20 +442,20 @@
               <img src="./assets/img/jpg/image2.jpeg" alt="Company 2 Logo">
             </div>
             <div class="experience-details">
-              <h2>Cloud Support Engineer – I</h2>
+              <h2>Web Developer Associate</h2>
               <p>Jan 2022 - Dec 2022 | Hyderabad, Telangana</p>
             </div>
           </div>
           <div class="experience-content">
             <ul>
-              <li>Provided comprehensive cloud support for Salesforce administration, including managing user roles, permissions, and privileges within cloud applications.</li>
-              <li>Effectively handled and resolved ServiceNow tickets related to cloud applications and infrastructure.</li>
-              <li>Collaborated closely with cross-functional teams to diagnose and address cloud-related problems.</li>
-              <li>Contributed to ongoing process improvements aimed at enhancing service efficiency and reliability.</li>
-              <li>Clearly communicated technical issues and solutions to non-technical stakeholders.</li>
-              <li>Maintained high levels of customer satisfaction through timely and effective issue resolution.</li>
-              <li>Regularly monitored system performance and generated reports to identify potential issues before they impacted users.</li>
+              <li>Developed and maintained responsive web interfaces for internal cloud-based applications, using HTML, CSS, and JavaScript.</li>
+              <li>Collaborated with cross-functional teams to troubleshoot and resolve front-end issues, ensuring seamless user experience across multiple platforms.</li>
+              <li>Integrated RESTful APIs into front-end applications to improve data flow and enhance performance.</li>
+              <li>Optimized existing web applications by addressing performance issues and improving cross-browser compatibility.</li>
+              <li>Provided user-friendly solutions by simplifying technical aspects for non-technical stakeholders and delivering clear communication on project updates.</li>
+              <li>Monitored and analyzed front-end performance metrics, implementing proactive improvements to ensure high reliability and efficient functionality.</li>
             </ul>
+            
           </div>
         </div>
       </div>
